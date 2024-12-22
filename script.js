@@ -83,21 +83,21 @@
 // else console.log('Your final score is 0');
 
 //Task11
-alert('Task11');
-let days = prompt('Input the amount of days you are going to book a car for');
-const amountForDay = 40;
-let price;
-let sale = 0;
-if(isNaN(days) || days < 0){
-    console.log('Invalid value');
-} 
-else {
-    if(days >= 7) sale = 50;
-    else if(days >= 3) sale = 20;
-    else sale = 0;
-    price = Number(days)*amountForDay - sale;
-    console.log('Price: ' + price);
-}
+// alert('Task11');
+// let days = prompt('Input the amount of days you are going to book a car for');
+// const amountForDay = 40;
+// let price;
+// let sale = 0;
+// if(isNaN(days) || days < 0){
+//     console.log('Invalid value');
+// } 
+// else {
+//     if(days >= 7) sale = 50;
+//     else if(days >= 3) sale = 20;
+//     else sale = 0;
+//     price = Number(days)*amountForDay - sale;
+//     console.log('Price: ' + price);
+// }
 
 
 
