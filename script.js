@@ -1,7 +1,7 @@
 //Task1
-alert('Task1');
-let name = prompt('Input your name');
-alert('Hello, '+name);
+// alert('Task1');
+// let name = prompt('Input your name');
+// alert('Hello, '+name);
 
 //Task2
 // alert('Task2');
@@ -83,16 +83,18 @@ alert('Hello, '+name);
 // else console.log('Your final score is 0');
 
 //Task11
-// alert('Task11');
-// let days = prompt('Input the amount of days you are going to book a car for');
-// const amountForDay = 40;
-// let price;
-// if(isNaN(days) || days < 0){
-//     price = 'error- invalid value';
-// } 
-// else if(days >= 7) price = (days*amountForDay)-50;
-// else if(days >= 3) price = (days*amountForDay)-20;
-// else price = days*amountForDay;
-// console.log('Price: ' + price);
+alert('Task11');
+let days = prompt('Input the amount of days you are going to book a car for');
+const amountForDay = 40;
+let price;
+let sale = 0;
+if(isNaN(days) || days < 0){
+    price = 'error- invalid value';
+} 
+else if(days >= 7) sale = 50;
+else if(days >= 3) sale = 20;
+else sale = 0;
+price = Number(days)*amountForDay - sale;
+console.log('Price: ' + price);
 
 
