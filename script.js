@@ -89,12 +89,15 @@ const amountForDay = 40;
 let price;
 let sale = 0;
 if(isNaN(days) || days < 0){
-    price = 'error- invalid value';
+    console.log('Invalid value');
 } 
-else if(days >= 7) sale = 50;
-else if(days >= 3) sale = 20;
-else sale = 0;
-price = Number(days)*amountForDay - sale;
-console.log('Price: ' + price);
+else {
+    if(days >= 7) sale = 50;
+    else if(days >= 3) sale = 20;
+    else sale = 0;
+    price = Number(days)*amountForDay - sale;
+    console.log('Price: ' + price);
+}
+
 
 
